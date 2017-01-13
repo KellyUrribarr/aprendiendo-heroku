@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://use.fontawesome.com/253bce21cd.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/css/estilos.css">
+	<title>Air bnb</title>
+	<link rel="icon" href="dist/img/favicon.PNG" type="image/x-icon"/>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!--NAVBAR-->
+	<nav>
+		<div class="nav-wrapper white">
+			<a href="#" class="brand-logo"><img src="dist/img/favicon.PNG"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="sass.html">Conviértete en anfitrión</a></li>
+				<li><a href="badges.html">Ayuda</a></li>
+				<li><a href="collapsible.html">Resgístrate</a></li>
+				<li><a href="collapsible.html">Iniciar sección</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+	<!--TERMINA NAVBAR-->
+	
+	<!--CARRUSEL-->	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<div class="slider">
+					<ul class="slides">
+						<li>
+							<img src="dist/img/posters_01.jpg"> <!-- random image -->
+							<div class="caption">
+								<h3>Te espera un mundo de viajes inolvidables.</h3>
+								<h5>Alojamientos, experiencias y lugares, todo en una sola aplicación.</h5>
+								<a class="waves-effec waves-light btn">Descubre las últimas novedades</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--CARRUSEL-->	
+	<!--DATEPICKER-->
+	<section id="datepicker">
+		<div class="container z-depth-1">
+			<div class="row">
+				<div class="col s12 m4 l4">
+					<div class="padd" id="floating-panel">
+						<span>Dónde</span>
+						<select id="start">
+							<option class="titulos" value="chicago, il">Destino, cuidad, dirección</option>
+							<option value="st louis, mo">St Louis</option>
+							<option value="joplin, mo">Joplin, MO</option>
+							<option value="oklahoma city, ok">Oklahoma City</option>
+							<option value="amarillo, tx">Amarillo</option>
+							<option value="gallup, nm">Gallup, NM</option>
+							<option value="flagstaff, az">Flagstaff, AZ</option>
+							<option value="winona, az">Winona</option>
+							<option value="kingman, az">Kingman</option>
+							<option value="barstow, ca">Barstow</option>
+							<option value="san bernardino, ca">San Bernardino</option>
+							<option value="los angeles, ca">Los Angeles</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="col s12 m4 l4">
+					<div class="padd" id="floating-panel">
+						<span class="lef">Cuándo</span>
+						<div class="row">
+							<div class="col s12 m6 l6">
+								<input type="date" class="datepicker" value="Llegada">
+							</div>
+							<div class="col s12 m6 l6">
+								<span></span>
+								<input type="date" class="datepicker" value="Salida">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="padd" id="floating-panel">
+						<div class="row">
+							<div class="col s12 m6 l6">
+								<span>Huespedes</span>
+								<select>
+									<option value="1">1 Huesped</option>
+									<option value="2">2 Huespedes</option>
+									<option value="3">3 Huespedes</option>
+									<div class="divider"></div>
+									<option value="4">1 Bebe</option>
+								</select>
+							</div>
+							<div class="col s12 m6 l6">
+								<a class="waves-effect waves-light btn">Buscar</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!--TERMINA DATEPICKER-->
+	<!--EXPERIENCIAS-->
+	<section id="experiencias">
+		<div class="container">
+			<div class="row">
+				<div col s12 m12 l12>
+					<h5 class="exp">Experiencias</h5>
+					<br>
+					<div class="row">
+						<div class="col s12 m3 l3">
+							<img src="dist/img/img01.jpg">
+							<span><b>$4276 MXN</b> workshop clubbing · 2 días</span>
+						</div>
+						<div class="col s12 m3 l3">
+							<img src="dist/img/img02.jpg">
+							<span><b>$5344 MXN </b> Community fitness · 3 días</span>
+						</div>
+						<div class="col s12 m3 l3">
+							<img src="dist/img/img03.jpg">
+							<span><b>$1368 MXN</b> Coffee roasting experience</span>
+						</div>
+						<div class="col s12 m3 l3">
+							<img src="dist/img/img04.jpg">
+							<span><b>$1817 MXN</b> Boxingcommunity experience</span>
+						</div>
+					</div>
+					<i class="fa fa-chevron-right" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--TERMINA EXPERIENCIAS-->
+	<br>
+	<!--FOOTER-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m2 l2">
+					<div class="row">
+						<div class="col s12 m12 l12">
+							<select class="browser-default">
+								<option value="" disabled selected>Español</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+							<select class="browser-default">
+								<option value="" disabled selected>USD</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+							<br>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="bloqmenu">
+						<h5>Air bnb</h5>
+						<ul>
+							<li><a href="#">Acerca de</a></li>
+							<li><a href="#">Emplea</a></li>
+							<li><a href="#">Prensa</a></li>
+							<li><a href="#">Politicas</a></li>
+							<li><a href="#">Prensa</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col s12 m3 l3">
+					<div class="bloquemenu">
+						<h5>Descubre Airbnb</h5>
+						<ul>
+							<li><a href="#">Confianza y seguridad</a></li>
+							<li><a href="#">Invitaciones</a></li>
+							<li><a href="#">Airbnb Action</a></li>
+							<li><a href="#">Viajes de negocios</a></li>
+							<li><a href="#">Guías</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col s12 m3 l3">
+					<h5>Hospedar</h5>
+					<ul>
+						<li><a href="#">Razones para hospedar</a></li>
+						<li><a href="#">Hospitalidad</a></li>
+						<li><a href="#">Ser un anfitrión</a></li>
+						<li><a href="#">Responsable</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="divider"></div>
+		</div>
+	</footer>
+
+	<div class="row bottomlinks">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6 l6">
+					<div>
+						<img src="dist/img/airbnb-logo-footer.png">
+						<a href="#">© Airbnb inc.</a>
+					</div>
+					
+				</div>
+				<div class="col s12 m4 l4">
+					<a href="#" class="linksubmenu">Terminos y privacidad &nbsp;</a>
+					<a href="#" class="linksubmenu">Mapa del sitio</a>
+				</div>
+				<div class="col s12 m2 l2">
+					<div class="row">
+						<div class="col m4 l4">
+							<i class="fa fa-instagram right" aria-hidden="true"></i>
+						</div>
+						<div class="col m4 l4">
+							<i class="fa fa-twitter right" aria-hidden="true"></i>
+						</div>
+						<div class="col m4 l4">
+							<i class="fa fa-facebook right" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</footer>
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="dist/js/materialize.js"></script>
+		<script type="text/javascript" src="dist/js/script.min.js"></script>
+		<script type="text/javascript" src="src/js/main.js"></script>	
+	</body>
+	</html>

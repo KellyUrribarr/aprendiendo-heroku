@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="node_modules/ion-rangeslider/css/normalize.css">
+	<link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.css">
+	<link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.skinFlat.css">
+	<link rel="icon" href="dist/img/favicon.PNG" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Air bnb</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<section id="fechas">
+		
+		<div class="row">
+			<!--esperar seccion nav para rellenar con date picker-->
+			<form class="col m6 s12">
+				<div class="row">
+					<div class="col m3 s6">
+						<p>Fechas</p>
+					</div>
+					<div class="col m3 s6">
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col m3 s6">
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col m3 s6">
+						<span>Huespedes</span>
+						<select>
+							<option value="1">1 Huesped</option>
+							<option value="2">2 Huespedes</option>
+							<option value="3">3 Huespedes</option>
+							<div class="divider"></div>
+							<option value="4">1 Bebe</option>
+						</select>
+					</div>
+
+				</div>
+				<div class="divider"></div>
+				<div class="row">
+					<div class="col m12 s12">
+						<div class="row">
+							<div class="col m3 s6">
+								<p>Tipo de habitacion</p>
+							</div>
+
+							<p class="radio-inline col m3 s6" >
+								<input type="checkbox" id="test5" value="casa"/>
+								<label for="test5">Casa Entera</label>
+							</p>
+							<p class="radio-inline col m3 s6">
+								<input type="checkbox" id="test6" value="privada" />
+								<label for="test6">Habitacion Privada</label>
+							</p>
+							<p class="radio-inline col m3 s6">
+								<input type="checkbox" id="test7" value="compartida" />
+								<label for="test7">Habitacion Compartida</label>
+							</p>
+
+						</div>
+
+
+					</div>
+
+				</div>
+				<div class="divider"></div>
+				<div class="row">
+					<div class="col m6 s12">
+						<div data-role="rangeslider">
+							<label for="price-min">Price:</label>
+							<input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m12 s12">
+
+						<div class="col m2 s12">
+							<p>Rerserva Inmediata</p>
+							<a class=" btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</div>
+						<div class="col m7 s12">
+							<p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+						</div>
+						<div class="col m3 s12">
+							<div class="onoffswitch">
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+			</form>
+		</div>
+		
+
+
+	</section>
+
+
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/ion-rangeslider/js/ion.rangeSlider.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="dist/js/script.min.js"></script>
+	<script type="text/javascript" src="src/js/main.js"></script>	
+</body>
+</html>

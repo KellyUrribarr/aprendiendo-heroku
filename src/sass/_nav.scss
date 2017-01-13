@@ -1,0 +1,59 @@
+nav {
+    @include naba;
+  }
+
+.nav-wrapper a img {
+    @include naba-imag; 
+}
+
+// Navbar Links
+
+nav {
+
+  ul {
+    margin: 0;
+
+    li {
+      transition: background-color .3s;
+      float: left;
+      padding: 0;
+
+      &.active {
+        background-color: $maincolor;
+      }
+    }
+    a {
+      transition: background-color .3s;
+      
+      color: $color-base;
+      display: block;
+      padding: 0 15px;
+      cursor: pointer;
+
+      &.btn, &.btn-large, &.btn-flat, &.btn-floating {
+        margin-top: 1em;
+      }
+    }
+
+    &.left {
+      float: left;
+    }
+  }
+}
+
+@media #{$medium-and-down} {
+  .pagination {
+    width: 100%;
+
+    li.prev,
+    li.next {
+      width: 10%;
+    }
+
+    li.pages {
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+
+.white-text h2 {
+	position:relative;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    position: relative;
+    top: 14.3em !important;
+}
+
+.slider .indicators {
+  position: relative;
+  left: 38em !important;
+  top: -4em;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 9;
+}
+
+//.carousel-slider img {
+//  position: relative;
+//  bottom: 0;
+//  top: 0;
+// }
+
+.caption h3{
+  color: $color-base;
+  font-weight: bold;
+}
+.caption h5{
+  color: $color-base;
+}
+
+.caption a {
+  border: 1px solid $grayborder !important;
+
+}
+
+.waves-effect {
+  @include wavs-effect;
+}
+
+.waves-effec {
+    position: relative;
+    z-index: 8;
+    color: #000;
+    border-radius: 7px;
+    padding: 0 30px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background: transparent;
+}

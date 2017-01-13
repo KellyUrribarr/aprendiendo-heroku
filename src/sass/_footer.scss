@@ -1,0 +1,55 @@
+footer{
+	border-top:1px solid $grayborder;
+	padding-top:4vh;
+
+	h5 {
+		font-size:1em;
+		font-weight:bold;
+	}
+
+	a {
+		color:$colorbottomlinks !important;
+		font-weight:bold;
+	}
+
+	select{
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+}
+
+.linksubmenu{
+	margin-top:7vh;
+}
+.fa {
+	color:$colorbottomlinks;
+}
+.bottomlinks{
+	padding-top:4vh;
+}
+
+.bloqmenu{
+	position:relative;
+	padding-left:4em;
+}
+
+.bottomlinks a {
+	color: $colorbottomlinks;
+	padding-bottom: 4em;
+	font-weight: bold;
+	position: relative;
+    left: 4em;
+    top: 0.5em;
+}
+
+.bottomlinks img {
+	width:2.5em;
+	height:2.5em;
+	position: absolute;
+}
+
+i.right {
+    float: right;
+    position: relative;
+    top: 0.5em;
+}

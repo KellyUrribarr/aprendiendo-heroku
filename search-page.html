@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="node_modules/ion-rangeslider/css/normalize.css">
+	<link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.css">
+	<link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.skinFlat.css">
+	<link rel="icon" href="dist/img/favicon.PNG" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="dist/css/estilos.css">
+	<title>Airbnb</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo"><img src="dist/img/favicon.PNG"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="sass.html">Conviértete en anfitrión</a></li>
+				<li><a href="badges.html">Ayuda</a></li>
+				<li><a href="collapsible.html">Resgístrate</a></li>
+				<li><a href="collapsible.html">Iniciar sección</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<section id="fechas">
+		
+		<div class="row">
+			<!--esperar seccion nat para rellenar con date picker-->
+			<form class="col m6 s12 ">
+				<div class="row">
+					<div class="col m3 s6">
+						<p>Fechas</p>
+					</div>
+					<div class="col m3 s6">
+						<input type="date" class="datepicker" value="Llegada">
+					</div>
+					<div class="col m3 s6">
+						<input type="date" class="datepicker" value="Salida">
+					</div>
+					<div class="col m3 s6">
+						<span>Huespedes</span>
+						<select>
+							<option value="1">1 Huesped</option>
+							<option value="2">2 Huespedes</option>
+							<option value="3">3 Huespedes</option>
+							<div class="divider"></div>
+							<option value="4">1 Bebe</option>
+						</select>
+					</div>
+
+				</div>
+				<div class="divider"></div>
+				<div class="row">
+					<div class="col m12 s12">
+						<div class="row">
+							<div class="col m3 s6">
+								<p>Tipo de habitación</p>
+								<a class="tooltipped" data-position="right" data-delay="50" data-tooltip="Casa Entera Anuncios En los que tienes todo el lugar para ti.
+								Habitacion Privada:"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+							</div>
+							<div class="col m9 s6 box-check">
+								<div class="row">
+									<div class="col m4 s6 segunda">
+										<span class="radio-inline " >
+											<input type="checkbox" id="test5" value="casa"/>
+											<label for="test5"><i class="fa fa-home" aria-hidden="true"></i> Casa Entera  </label>
+										</span>
+
+									</div>
+									<div class="col m4 s6 ">
+										<span class="radio-inline ">
+											<input type="checkbox" id="test6" value="privada" />
+											<label for="test6"><i class="fa fa-bath" aria-hidden="true"></i> Habitación Privada</label>
+										</span>
+										
+									</div>
+									<div class="col m4 s6">
+										<span class="radio-inline ">
+											<input type="checkbox" id="test7" value="compartida" />
+											<label for="test7"><i class="fa fa-bed" aria-hidden="true"></i>Habitación Compartida</label>
+										</span>
+										
+									</div>									
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+				<div class="divider"></div>
+				<div class="row">
+					<div class="col m2 s12">
+						<p>Rango de Precios</p>
+					</div>
+					<div class="col m6 s12">
+
+						<input type="range" min="10" max="1000" step="10" id="range" value="300" data-orientation="vertical">
+						
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="divider"></div>
+					<div class="col m12 s12">
+
+						<div class="col m2 s12">
+							<p><i class="fa fa-bolt" aria-hidden="true"></i>Rerserva Inmediata</p>
+							
+						</div>
+						<div class="col m7 s12">
+							<p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+						</div>
+						<div class="col m3 s12">
+							<div class="onoffswitch">
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>	
+			</form>
+			<aside>
+				<div class="col m6 ">
+					<div id="map" style="width:100%;height:500px"></div>
+				</div>
+			</aside>
+		</div>
+
+	</section>
+
+
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI-ZZq7ouJJjoqQW05ZOCa3ewtr_vjHOQ&callback=initMap">
+</script>
+<script type="text/javascript" src="dist/js/materialize.js"></script>
+<script type="text/javascript" src="dist/js/script.min.js"></script>
+<script type="text/javascript" src="src/js/main.js"></script>
+<script src="node_modules/ion.rangeslider/js/ion.rangeSlider.js"></script>	
+</body>
+</html>
